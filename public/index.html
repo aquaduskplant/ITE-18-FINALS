@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SIMS – Student Information Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="container">
+    <h1>SIMS <span class="muted">Student Information Management System</span></h1>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <!-- Form -->
+      <section class="card">
+        <h2>Add Student</h2>
+        <form id="studentForm" autocomplete="off" novalidate>
+          <div class="row">
+            <label>Student ID</label>
+            <input type="text" name="studentId" placeholder="BP-113-00001" required />
+          </div>
+          <div class="row">
+            <label>Full Name</label>
+            <input type="text" name="fullName" placeholder="First Last" required />
+          </div>
+          <div class="row">
+            <label>Gender</label>
+            <select name="gender" required>
+              <option value="">-- Select --</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="row">
+            <label>Gmail</label>
+            <input type="email" name="gmail" placeholder="user@gmail.com" required />
+          </div>
+          <div class="row">
+            <label>Program</label>
+            <input type="text" name="program" placeholder="BS Computer Science" required />
+          </div>
+          <div class="row">
+            <label>Year Level</label>
+            <input type="text" name="yearLevel" placeholder="1st Year (or 1..6)" required />
+          </div>
+          <div class="row">
+            <label>University</label>
+            <input type="text" name="university" placeholder="Caraga State University ..." required />
+          </div>
+
+          <div class="row">
+            <button type="submit" class="btn">Add Student</button>
+            <button type="reset" class="btn ghost">Clear</button>
+          </div>
+
+          <p class="hint">
+            Tip: Year Level accepts “1st Year”, “2nd Year”, … or plain numbers 1–6.
+          </p>
+        </form>
+      </section>
+
+      <!-- Filters -->
+      <section class="card">
+        <h2>Search &amp; Filters</h2>
+        <div class="row">
+          <label>Search (Name / Program / University)</label>
+          <input type="search" id="q" placeholder="e.g., Physics, Caraga, Chelsea" />
+        </div>
+        <div class="row three">
+          <div>
+            <label>Gender</label>
+            <select id="fltGender">
+              <option value="">All</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label>Program contains</label>
+            <input type="text" id="fltProgram" placeholder="e.g., BS Biology" />
+          </div>
+          <div>
+            <label>Year Level</label>
+            <select id="fltYear">
+              <option value="">All</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn ghost" id="resetFilters">Reset Filters</button>
+        </div>
+
+        <details class="bulk">
+          <summary>Bulk Add (Paste rows)</summary>
+          <p>
+            Paste rows like:<br />
+            <code>
+              BP-113-00001 | Chelsea Greer | Female | chelseagreer@gmail.com | BS Physics | 5th Year | Caraga State University - Cabadbaran Campus
+            </code>
+          </p>
+          <textarea
+            id="bulkText"
+            rows="6"
+            placeholder="One student per line. Use | (pipe) as separators."
+          ></textarea>
+          <button class="btn" id="bulkAddBtn">Add Pasted Students</button>
+          <p class="hint">
+            This is handy for importing from the provided dataset.
+          </p>
+        </details>
+      </section>
+
+      <!-- Table -->
+      <section class="card col-span-2">
+        <h2>Students (<span id="count">0</span>)</h2>
+        <div class="table-wrap">
+          <table id="studentsTable">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Gmail</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>University</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody><!-- dynamic --></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="container foot">
+    <small>SIMS • Local JSON storage via Node/Express</small>
+  </footer>
+
+  <!-- 🔹 Floating Chat Widget -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <div class="chat-title">
+        <span class="chat-dot"></span>
+        <span>LLM Data Assistant</span>
+      </div>
+      <button class="chat-close" id="chatCloseBtn" aria-label="Close chat">&times;</button>
+    </div>
+
+    <div class="chat-body">
+      <p class="hint">
+        Ask questions about the stored students, for example:<br />
+        <code>How many 3rd-year students are stored?</code><br />
+        <code>List students in Bs Information Technology.</code>
+      </p>
+
+      <div id="chatLog" class="chat-log"></div>
+      <div id="chatStatus" class="hint"></div>
+    </div>
+
+    <form id="chatForm" class="chat-input-row">
+      <input
+        id="chatInput"
+        type="text"
+        placeholder="Type your question about the student data..."
+        autocomplete="off"
+      />
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
+
+  <!-- Floating button to open chat -->
+  <button class="chat-fab" id="chatFab" aria-label="Open chat">
+    💬
+  </button>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

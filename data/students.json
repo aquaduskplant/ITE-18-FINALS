@@ -1,0 +1,902 @@
+[
+  {
+    "studentId": "BM-113-00002",
+    "fullName": "Nicolas Medina",
+    "gender": "Male",
+    "gmail": "nicolasmedina@gmail.com",
+    "program": "Bs Mathematics",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BM-113-00003",
+    "fullName": "Maureen Palmer",
+    "gender": "Female",
+    "gmail": "maureenpalmer@gmail.com",
+    "program": "Bs Mathematics",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BG-113-00004",
+    "fullName": "Patrick Bailey",
+    "gender": "Male",
+    "gmail": "patrickbailey@gmail.com",
+    "program": "Bs Geolody",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCE-113-00005",
+    "fullName": "Bradley Hancock",
+    "gender": "Male",
+    "gmail": "bradleyhancock@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BA-113-00006",
+    "fullName": "Michelle Sanders",
+    "gender": "Female",
+    "gmail": "michellesanders@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCS-113-00007",
+    "fullName": "Lawrence Miller",
+    "gender": "Male",
+    "gmail": "lawrencemiller@gmail.com",
+    "program": "Bs Computer Science",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BF-113-00008",
+    "fullName": "Amanda Park",
+    "gender": "Female",
+    "gmail": "amandapark@gmail.com",
+    "program": "Bs Forestry",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00009",
+    "fullName": "Casey Coleman",
+    "gender": "Male",
+    "gmail": "caseycoleman@gmail.com",
+    "program": "Bs Electrical Engineering",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00010",
+    "fullName": "Dana Russell",
+    "gender": "Female",
+    "gmail": "danarussell@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BA-113-00011",
+    "fullName": "Rachel Ward",
+    "gender": "Female",
+    "gmail": "rachelward@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00012",
+    "fullName": "Dr. James Gomez",
+    "gender": "Male",
+    "gmail": "dr.jamesgomez@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BC-113-00013",
+    "fullName": "Joel Collins",
+    "gender": "Male",
+    "gmail": "joelcollins@gmail.com",
+    "program": "Bs Chemistry",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BB-113-00014",
+    "fullName": "Sarah Vargas",
+    "gender": "Female",
+    "gmail": "sarahvargas@gmail.com",
+    "program": "Bs Biology",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BCE-113-00015",
+    "fullName": "Jennifer Rodriguez Phd",
+    "gender": "Female",
+    "gmail": "jenniferrodriguezphd@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BIS-113-00016",
+    "fullName": "Christopher Hall",
+    "gender": "Male",
+    "gmail": "christopherhall@gmail.com",
+    "program": "Bs Information Systems",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00017",
+    "fullName": "Michael Lynch",
+    "gender": "Male",
+    "gmail": "michaellynch@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00018",
+    "fullName": "Joel Campbell",
+    "gender": "Male",
+    "gmail": "joelcampbell@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCE-113-00019",
+    "fullName": "Thomas Sanchez",
+    "gender": "Male",
+    "gmail": "thomassanchez@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BTM-113-00020",
+    "fullName": "Ashley Farrell",
+    "gender": "Female",
+    "gmail": "ashleyfarrell@gmail.com",
+    "program": "Bs Tourism Management",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BIS-113-00021",
+    "fullName": "Jennifer Francis",
+    "gender": "Female",
+    "gmail": "jenniferfrancis@gmail.com",
+    "program": "Bs Information Systems",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BF-113-00022",
+    "fullName": "Molly Mathews",
+    "gender": "Female",
+    "gmail": "mollymathews@gmail.com",
+    "program": "Bs Forestry",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BB-113-00023",
+    "fullName": "Elizabeth Allen",
+    "gender": "Female",
+    "gmail": "elizabethallen@gmail.com",
+    "program": "Bs Biology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00024",
+    "fullName": "Christina Kline",
+    "gender": "Female",
+    "gmail": "christinakline@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00025",
+    "fullName": "Mark Reynolds",
+    "gender": "Male",
+    "gmail": "markreynolds@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00026",
+    "fullName": "Haley Meyers",
+    "gender": "Female",
+    "gmail": "haleymeyers@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BG-113-00027",
+    "fullName": "Brian Berry",
+    "gender": "Male",
+    "gmail": "brianberry@gmail.com",
+    "program": "Bs Geolody",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BBA-113-00028",
+    "fullName": "Jerry Mendez",
+    "gender": "Male",
+    "gmail": "jerrymendez@gmail.com",
+    "program": "Bs Business Administration",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BIS-113-00029",
+    "fullName": "Darlene Haynes",
+    "gender": "Female",
+    "gmail": "darlenehaynes@gmail.com",
+    "program": "Bs Information Systems",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BTM-113-00030",
+    "fullName": "Douglas Young",
+    "gender": "Male",
+    "gmail": "douglasyoung@gmail.com",
+    "program": "Bs Tourism Management",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BF-113-00031",
+    "fullName": "Stephen Deleon",
+    "gender": "Male",
+    "gmail": "stephendeleon@gmail.com",
+    "program": "Bs Forestry",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00032",
+    "fullName": "Taylor Wilcox",
+    "gender": "Female",
+    "gmail": "taylorwilcox@gmail.com",
+    "program": "Bs Electrical Engineering",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00033",
+    "fullName": "Yvonne Holland",
+    "gender": "Female",
+    "gmail": "yvonneholland@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BIT-113-00034",
+    "fullName": "Raymond Hicks",
+    "gender": "Male",
+    "gmail": "raymondhicks@gmail.com",
+    "program": "Bs Information Technology",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00035",
+    "fullName": "Miss Kimberly Valdez",
+    "gender": "Female",
+    "gmail": "misskimberlyvaldez@gmail.com",
+    "program": "Bs Electrical Engineering",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BGE-113-00036",
+    "fullName": "Matthew Barnett",
+    "gender": "Male",
+    "gmail": "matthewbarnett@gmail.com",
+    "program": "Bs Geodetic Engineering",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BC-113-00037",
+    "fullName": "Jacob Long",
+    "gender": "Male",
+    "gmail": "jacoblong@gmail.com",
+    "program": "Bs Chemistry",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00038",
+    "fullName": "James Gonzalez",
+    "gender": "Male",
+    "gmail": "jamesgonzalez@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00039",
+    "fullName": "Jennifer Wiley",
+    "gender": "Female",
+    "gmail": "jenniferwiley@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00040",
+    "fullName": "Kimberly Dawson",
+    "gender": "Female",
+    "gmail": "kimberlydawson@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00041",
+    "fullName": "Kristen Cross",
+    "gender": "Female",
+    "gmail": "kristencross@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00042",
+    "fullName": "Jonathan Elliott",
+    "gender": "Male",
+    "gmail": "jonathanelliott@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BIT-113-00043",
+    "fullName": "John Juarez",
+    "gender": "Male",
+    "gmail": "johnjuarez@gmail.com",
+    "program": "Bs Information Technology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BES-113-00044",
+    "fullName": "Joshua Shaffer",
+    "gender": "Male",
+    "gmail": "joshuashaffer@gmail.com",
+    "program": "Bs Environmental Science",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BG-113-00045",
+    "fullName": "Faith Murphy",
+    "gender": "Female",
+    "gmail": "faithmurphy@gmail.com",
+    "program": "Bs Geolody",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BES-113-00046",
+    "fullName": "Emily Guzman",
+    "gender": "Female",
+    "gmail": "emilyguzman@gmail.com",
+    "program": "Bs Environmental Science",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00047",
+    "fullName": "Glenda Price",
+    "gender": "Female",
+    "gmail": "glendaprice@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00048",
+    "fullName": "Robert Baker",
+    "gender": "Male",
+    "gmail": "robertbaker@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BM-113-00049",
+    "fullName": "Vanessa Turner",
+    "gender": "Female",
+    "gmail": "vanessaturner@gmail.com",
+    "program": "Bs Mathematics",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BC-113-00050",
+    "fullName": "Eric Wolfe",
+    "gender": "Male",
+    "gmail": "ericwolfe@gmail.com",
+    "program": "Bs Chemistry",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BM-113-00051",
+    "fullName": "Theresa Daniels",
+    "gender": "Female",
+    "gmail": "theresadaniels@gmail.com",
+    "program": "Bs Mathematics",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BBA-113-00052",
+    "fullName": "James Nelson",
+    "gender": "Male",
+    "gmail": "jamesnelson@gmail.com",
+    "program": "Bs Business Administration",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BGE-113-00053",
+    "fullName": "Christopher Sloan",
+    "gender": "Male",
+    "gmail": "christophersloan@gmail.com",
+    "program": "Bs Geodetic Engineering",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BA-113-00054",
+    "fullName": "Lori Gibbs",
+    "gender": "Female",
+    "gmail": "lorigibbs@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BIS-113-00055",
+    "fullName": "Timothy Carlson",
+    "gender": "Male",
+    "gmail": "timothycarlson@gmail.com",
+    "program": "Bs Information Systems",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00056",
+    "fullName": "Angela Martin",
+    "gender": "Female",
+    "gmail": "angelamartin@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BCE-113-00057",
+    "fullName": "Kimberly Cochran",
+    "gender": "Female",
+    "gmail": "kimberlycochran@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00058",
+    "fullName": "Brenda Smith",
+    "gender": "Female",
+    "gmail": "brendasmith@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00059",
+    "fullName": "William Knight",
+    "gender": "Male",
+    "gmail": "williamknight@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BC-113-00060",
+    "fullName": "Brooke Walker",
+    "gender": "Female",
+    "gmail": "brookewalker@gmail.com",
+    "program": "Bs Chemistry",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BM-113-00061",
+    "fullName": "Rachel Allen",
+    "gender": "Female",
+    "gmail": "rachelallen@gmail.com",
+    "program": "Bs Mathematics",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00062",
+    "fullName": "Alicia Jones",
+    "gender": "Female",
+    "gmail": "aliciajones@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BB-113-00063",
+    "fullName": "Joseph Wilson",
+    "gender": "Male",
+    "gmail": "josephwilson@gmail.com",
+    "program": "Bs Biology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCE-113-00064",
+    "fullName": "Megan Williams",
+    "gender": "Female",
+    "gmail": "meganwilliams@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BG-113-00065",
+    "fullName": "Tasha Mann",
+    "gender": "Female",
+    "gmail": "tashamann@gmail.com",
+    "program": "Bs Geolody",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BC-113-00066",
+    "fullName": "Erin Nguyen",
+    "gender": "Female",
+    "gmail": "erinnguyen@gmail.com",
+    "program": "Bs Chemistry",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00067",
+    "fullName": "Nancy Kirk",
+    "gender": "Female",
+    "gmail": "nancykirk@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00068",
+    "fullName": "Michael Hudson",
+    "gender": "Male",
+    "gmail": "michaelhudson@gmail.com",
+    "program": "Bs Electrical Engineering",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00069",
+    "fullName": "Greg Andrade",
+    "gender": "Male",
+    "gmail": "gregandrade@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BF-113-00070",
+    "fullName": "Alexander Kline",
+    "gender": "Male",
+    "gmail": "alexanderkline@gmail.com",
+    "program": "Bs Forestry",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BA-113-00071",
+    "fullName": "Erin Mcdonald",
+    "gender": "Female",
+    "gmail": "erinmcdonald@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00072",
+    "fullName": "Travis Vaughan",
+    "gender": "Male",
+    "gmail": "travisvaughan@gmail.com",
+    "program": "Bs Electrical Engineering",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00073",
+    "fullName": "Linda Grimes",
+    "gender": "Female",
+    "gmail": "lindagrimes@gmail.com",
+    "program": "Bs Physics",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00074",
+    "fullName": "Brandon Nelson",
+    "gender": "Male",
+    "gmail": "brandonnelson@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BP-113-00075",
+    "fullName": "Paul Bishop",
+    "gender": "Male",
+    "gmail": "paulbishop@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCS-113-00076",
+    "fullName": "Dennis Evans",
+    "gender": "Male",
+    "gmail": "dennisevans@gmail.com",
+    "program": "Bs Computer Science",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BB-113-00077",
+    "fullName": "Robert Mitchell",
+    "gender": "Male",
+    "gmail": "robertmitchell@gmail.com",
+    "program": "Bs Biology",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BB-113-00078",
+    "fullName": "William Anderson",
+    "gender": "Male",
+    "gmail": "williamanderson@gmail.com",
+    "program": "Bs Biology",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCS-113-00079",
+    "fullName": "Timothy Gonzalez",
+    "gender": "Male",
+    "gmail": "timothygonzalez@gmail.com",
+    "program": "Bs Computer Science",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BES-113-00080",
+    "fullName": "Keith Garcia",
+    "gender": "Male",
+    "gmail": "keithgarcia@gmail.com",
+    "program": "Bs Environmental Science",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BIT-113-00081",
+    "fullName": "Christine Avila",
+    "gender": "Female",
+    "gmail": "christineavila@gmail.com",
+    "program": "Bs Information Technology",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BB-113-00082",
+    "fullName": "Leslie Dodson",
+    "gender": "Female",
+    "gmail": "lesliedodson@gmail.com",
+    "program": "Bs Biology",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BIT-113-00083",
+    "fullName": "Donald Brown",
+    "gender": "Male",
+    "gmail": "donaldbrown@gmail.com",
+    "program": "Bs Information Technology",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BF-113-00084",
+    "fullName": "Julie Armstrong",
+    "gender": "Female",
+    "gmail": "juliearmstrong@gmail.com",
+    "program": "Bs Forestry",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BCE-113-00085",
+    "fullName": "Donald Gomez",
+    "gender": "Male",
+    "gmail": "donaldgomez@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00086",
+    "fullName": "Nicholas Burgess",
+    "gender": "Male",
+    "gmail": "nicholasburgess@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BGE-113-00087",
+    "fullName": "Whitney Bishop",
+    "gender": "Female",
+    "gmail": "whitneybishop@gmail.com",
+    "program": "Bs Geodetic Engineering",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00088",
+    "fullName": "Linda Tate",
+    "gender": "Female",
+    "gmail": "lindatate@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BG-113-00089",
+    "fullName": "Mary Barr",
+    "gender": "Female",
+    "gmail": "marybarr@gmail.com",
+    "program": "Bs Geolody",
+    "yearLevel": "2nd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BIS-113-00090",
+    "fullName": "Paul Brown",
+    "gender": "Male",
+    "gmail": "paulbrown@gmail.com",
+    "program": "Bs Information Systems",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BA-113-00091",
+    "fullName": "Greg Bentley",
+    "gender": "Male",
+    "gmail": "gregbentley@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BCS-113-00092",
+    "fullName": "Jennifer Walsh",
+    "gender": "Female",
+    "gmail": "jenniferwalsh@gmail.com",
+    "program": "Bs Computer Science",
+    "yearLevel": "4th Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BEE-113-00093",
+    "fullName": "Crystal Davis",
+    "gender": "Female",
+    "gmail": "crystaldavis@gmail.com",
+    "program": "Bs Electrical Engineering",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BTM-113-00094",
+    "fullName": "Jesus Steele",
+    "gender": "Male",
+    "gmail": "jesussteele@gmail.com",
+    "program": "Bs Tourism Management",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BA-113-00095",
+    "fullName": "Holly Jenkins",
+    "gender": "Female",
+    "gmail": "hollyjenkins@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BEE-113-00096",
+    "fullName": "Bryan Shepherd",
+    "gender": "Male",
+    "gmail": "bryanshepherd@gmail.com",
+    "program": "Bs Elementary Education",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BCE-113-00097",
+    "fullName": "Robert Moon",
+    "gender": "Male",
+    "gmail": "robertmoon@gmail.com",
+    "program": "Bs Civil Engineering",
+    "yearLevel": "5th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BA-113-00098",
+    "fullName": "Thomas Hurst",
+    "gender": "Male",
+    "gmail": "thomashurst@gmail.com",
+    "program": "Bs Accountancy",
+    "yearLevel": "3rd Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BGE-113-00099",
+    "fullName": "Michael Preston",
+    "gender": "Male",
+    "gmail": "michaelpreston@gmail.com",
+    "program": "Bs Geodetic Engineering",
+    "yearLevel": "1st Year",
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BP-113-00100",
+    "fullName": "Matthew Duran",
+    "gender": "Male",
+    "gmail": "matthewduran@gmail.com",
+    "program": "Bs Psychology",
+    "yearLevel": "6th Year",
+    "university": "Caraga State University - Main Campus"
+  },
+  {
+    "studentId": "BM-113-00100",
+    "fullName": "Zed Castro",
+    "gender": "Male",
+    "gmail": "aquaduskplant@gmail.com",
+    "program": "BS Computer Science",
+    "yearLevel": "2",
+    "university": "Caraga State University"
+  }
+]

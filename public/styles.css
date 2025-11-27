@@ -1,0 +1,357 @@
+/* ================================
+   Theme Variables
+================================== */
+:root {
+  --accent: #2e8cff;
+  --bg: #0b0f14;
+  --card: #121821;
+  --danger: #ff5555;
+  --ink: #eaf2ff;
+  --line: #1f2b3a;
+  --muted: #9fb3c8;
+}
+
+/* ================================
+   Resets / Base
+================================== */
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.45 system-ui, Segoe UI, Roboto, Arial;
+  margin: 0;
+}
+
+/* ================================
+   Layout
+================================== */
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-span-2 { grid-column: 1 / span 2; }
+
+/* ================================
+   Typography
+================================== */
+header h1 {
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.muted {
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: .5rem;
+}
+
+/* ================================
+   Cards
+================================== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  padding: 18px;
+}
+
+.card h2 { margin: 0 0 8px; }
+
+/* ================================
+   Forms
+================================== */
+.row {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.row label {
+  color: var(--muted);
+  min-width: 140px;
+}
+
+.row input,
+.row select,
+.row textarea {
+  background: #0f141c;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  outline: none;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.row textarea { resize: vertical; }
+
+.row.three {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ================================
+   Buttons
+================================== */
+.btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.btn:hover { filter: brightness(1.1); }
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+/* ================================
+   Helpers
+================================== */
+.hint {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-top: 6px;
+}
+
+.badge {
+  background: #0f1b2b;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .8rem;
+  padding: 2px 8px;
+}
+
+.del {
+  background: transparent;
+  border: 1px solid var(--danger);
+  border-radius: 10px;
+  color: var(--danger);
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.bulk summary {
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.foot { opacity: .7; }
+
+/* ================================
+   Table
+================================== */
+.table-wrap {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+td:last-child { width: 1%; }
+
+/* ================================
+   Floating Chat Widget
+================================== */
+
+/* ================================
+   Floating Chat Widget
+================================== */
+
+.chat-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 420px;          /* was 360px */
+  max-width: 96vw;
+  height: 560px;         /* was 480px */
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 40;
+}
+
+
+.chat-widget.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.chat-header {
+  background: #101827;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.chat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.chat-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.chat-close {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 🔹 Important: min-height:0 lets the log scroll inside flex */
+.chat-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px 4px;
+}
+
+/* chat log inside widget */
+.chat-log {
+  flex: 1;
+  min-height: 0;
+  margin-top: 6px;
+  padding: 8px 6px;
+  border-radius: 10px;
+  background: #020617;
+  overflow-y: auto;             /* scroll only the messages */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.msg {
+  max-width: 80%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: #1d2939;
+}
+
+.msg.bot {
+  align-self: flex-start;
+  background: #0f172a;
+  border: 1px solid var(--line);
+}
+
+.msg.system {
+  align-self: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* chat input row at the bottom of widget */
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  padding: 8px 10px 10px;
+  border-top: 1px solid var(--line);
+}
+
+.chat-input-row input {
+  flex: 1;
+}
+
+/* Floating open-chat button */
+.chat-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  z-index: 30;
+}
+
+.chat-fab.hidden {
+  display: none;
+}
+
+/* ================================
+   Responsive
+================================== */
+@media (max-width: 800px) {
+  .grid { grid-template-columns: 1fr; }
+  .col-span-2 { grid-column: auto; }
+  .row.three { grid-template-columns: 1fr; }
+
+  .chat-widget {
+    right: 12px;
+    bottom: 12px;
+    width: calc(100vw - 24px);
+    height: 420px;
+    border-radius: 14px;
+  }
+
+  .chat-fab {
+    right: 16px;
+    bottom: 16px;
+  }
+}
