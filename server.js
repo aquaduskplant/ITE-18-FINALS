@@ -78,13 +78,10 @@ const app = express();
 // IMPORTANT: Render provides PORT via env; fall back to 3000 for local dev
 const PORT = process.env.PORT || 3000;
 
-// DATA paths
-// DATA_DIR can be overridden via env (e.g. /data on Render if you ever add a disk)
+// Optional: allow remapping the data directory when you add a Render Disk
+// On Render, set Environment Variable: DATA_DIR=/data  (and mount a Disk at /data)
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'students.json');
-
-// THIS is the seed data bundled with the project (your real JSON file)
-const SEED_STUDENTS = require(path.join(__dirname, 'data', 'students.json'));
 
 // --- middleware -------------------------------------------------------
 
@@ -105,29 +102,10 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // --- data helpers -----------------------------------------------------
-// Seed from SEED_STUDENTS if students.json does not exist or is totally empty.
 async function ensureDataFile() {
   await fse.ensureDir(DATA_DIR);
-
-  const exists = await fse.pathExists(DATA_FILE);
-
-  if (!exists) {
-    // No file yet → seed from bundled JSON
-    await fse.writeJson(DATA_FILE, SEED_STUDENTS, { spaces: 2 });
-    console.log('Seeded students.json from bundled data/students.json (no file).');
-    return;
-  }
-
-  // If file exists but is an empty array, optionally reseed
-  try {
-    const current = await fse.readJson(DATA_FILE);
-    if (Array.isArray(current) && current.length === 0) {
-      await fse.writeJson(DATA_FILE, SEED_STUDENTS, { spaces: 2 });
-      console.log('Reseeded students.json because it was empty.');
-    }
-  } catch (e) {
-    console.log('Failed to read existing DATA_FILE, reseeding:', e.message);
-    await fse.writeJson(DATA_FILE, SEED_STUDENTS, { spaces: 2 });
+  if (!(await fse.pathExists(DATA_FILE))) {
+    await fse.writeJson(DATA_FILE, []); // create empty array if missing
   }
 }
 
@@ -283,9 +261,19 @@ app.post('/chat', async (req, res) => {
 
     res.json({ reply });
   } catch (err) {
-    console.error('LLM error:', err.response?.data || err.message);
-    res.status(500).json({ error: 'Failed to contact LLM API.' });
+  const apiErr = err.response?.data;
+  console.error('LLM error:', apiErr || err.message);
+
+  const code = apiErr?.error?.code || apiErr?.error?.type;
+
+  if (code === 'rate_limit_exceeded') {
+    return res.status(429).json({
+      error: 'The free LLM quota has been reached for today. Please try again later.',
+    });
   }
+
+  return res.status(500).json({ error: 'Failed to contact LLM API.' });
+}
 });
 
 // Single-page app fallback (serves your UI)
