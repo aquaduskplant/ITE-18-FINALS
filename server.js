@@ -1,4 +1,4 @@
-// server.js — SIMS + LLM chat using Groq, loading key from .env
+// server.js — SIMS + LLM chat using Groq, loading key from .env and seeding students.json
 
 const path = require('path');
 const fs = require('fs');
@@ -78,10 +78,14 @@ const app = express();
 // IMPORTANT: Render provides PORT via env; fall back to 3000 for local dev
 const PORT = process.env.PORT || 3000;
 
-// Optional: allow remapping the data directory when you add a Render Disk
-// On Render, set Environment Variable: DATA_DIR=/data  (and mount a Disk at /data)
+// Data directory + files
+// DATA_DIR can be overridden in Render (e.g. /tmp/sims-data), otherwise uses ./data
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'students.json');
+
+// This is the seed file bundled with your repo.
+// On Render this is read-only, but we can copy its contents on first run.
+const REPO_SEED_FILE = path.join(__dirname, 'data', 'students.json');
 
 // --- middleware -------------------------------------------------------
 
@@ -104,8 +108,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 // --- data helpers -----------------------------------------------------
 async function ensureDataFile() {
   await fse.ensureDir(DATA_DIR);
-  if (!(await fse.pathExists(DATA_FILE))) {
-    await fse.writeJson(DATA_FILE, []); // create empty array if missing
+  const exists = await fse.pathExists(DATA_FILE);
+
+  if (!exists) {
+    // If we have a seed file in the repo, copy from it
+    if (await fse.pathExists(REPO_SEED_FILE)) {
+      try {
+        const seed = await fse.readJson(REPO_SEED_FILE);
+        await fse.writeJson(DATA_FILE, seed, { spaces: 2 });
+        console.log('Seeded students.json from bundled data.');
+      } catch (e) {
+        console.error('Failed to seed students.json, creating empty array instead:', e.message);
+        await fse.writeJson(DATA_FILE, [], { spaces: 2 });
+      }
+    } else {
+      // Fallback: empty file
+      console.log('No seed file found; created empty students.json.');
+      await fse.writeJson(DATA_FILE, [], { spaces: 2 });
+    }
   }
 }
 
@@ -128,7 +148,8 @@ app.get('/students', async (req, res) => {
   try {
     const students = await readStudents();
     res.json(students);
-  } catch {
+  } catch (e) {
+    console.error('Error in GET /students:', e.message);
     res.status(500).json({ error: 'Failed to read students.' });
   }
 });
@@ -181,7 +202,8 @@ app.post('/students', async (req, res) => {
     students.push(payload);
     await writeStudents(students);
     res.status(201).json(payload);
-  } catch {
+  } catch (e) {
+    console.error('Error in POST /students:', e.message);
     res.status(500).json({ error: 'Failed to add student.' });
   }
 });
@@ -197,7 +219,8 @@ app.delete('/students/:id', async (req, res) => {
     const [removed] = students.splice(idx, 1);
     await writeStudents(students);
     res.json(removed);
-  } catch {
+  } catch (e) {
+    console.error('Error in DELETE /students/:id:', e.message);
     res.status(500).json({ error: 'Failed to delete student.' });
   }
 });
